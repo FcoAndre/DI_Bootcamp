@@ -13,10 +13,14 @@ body {
   }
 
   h1  {
+    position: absolute;
+    top: 400px;
     color: rgb(175, 146, 13); font-family: 'Helvetica Neue', sans-serif; 
     font-size: 100px; font-weight: bold;  text-align: left;
-  margin: 200px 0 0 40px; 
-  text-shadow: 0 0 7px #000000, 0 0 15px #ffffff;
+    text-shadow: 0 0 7px #000000, 0 0 15px #ffffff;
+    margin-left: 40px; 
+
+
 
 
         }
@@ -25,9 +29,10 @@ body {
       color: rgb(175, 146, 13); font-family: 'Helvetica Neue', 
     sans-serif; font-size: 20px; line-height: 25px; margin: 40px 0 0 40px; 
     text-align: justify; text-justify: inter-word;
-    position: absolute;
    width: 300px;
    text-shadow: 0 0 10px #FF0000, 0 0 5px #0000FF;
+   position: absolute;
+   top: 600px;
 
 }
 
@@ -41,10 +46,29 @@ footer {
   bottom: 0; 
   left: 0;
   right: 0;
-display: inline;
-display: block;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+  display: inline;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  h1 {color: black;}
+ }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  h1 {color: pink;}
+
+ }
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+  h1 {color: rgb(255, 0, 0);}
+
+}
+
+@media all and (max-width: 480px) { 
+  h1 {color: rgb(46, 194, 33);}
+
 }
