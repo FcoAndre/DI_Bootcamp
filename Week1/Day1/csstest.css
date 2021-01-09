@@ -1,0 +1,9 @@
+p { color: red;}
+#welcome {color: salmon;}
+div body {
+    background-color: yellow;
+  }
+
+  div > p {
+    background-color: yellow;
+  }
