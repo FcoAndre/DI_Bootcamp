@@ -1,0 +1,31 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;  
+}
+
+section {
+  border: 1px solid black;
+  height: 400px;
+  display: flex;
+  text-align: center;
+}
+
+
+div {
+  margin: 10px;
+  background-color: aquamarine;
+  padding: 20px;
+  font-size: 30px;
+  color: red;
+}
+
+.box2 {
+  background-color: aquamarine;
+  margin: 10px;
+  height: 100px;
+  padding: 20px;
+  align-self: center;
+  width: 900px;
+  text-align: center;
+}

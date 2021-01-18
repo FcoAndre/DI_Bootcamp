@@ -13,8 +13,8 @@ body {
   }
 
   h1  {
-    position: absolute;
-    top: 400px;
+    position: relative;
+    top: 300px;
     color: rgb(175, 146, 13); font-family: 'Helvetica Neue', sans-serif; 
     font-size: 100px; font-weight: bold;  text-align: left;
     text-shadow: 0 0 7px #000000, 0 0 15px #ffffff;
@@ -31,8 +31,8 @@ body {
     text-align: justify; text-justify: inter-word;
    width: 300px;
    text-shadow: 0 0 10px #FF0000, 0 0 5px #0000FF;
-   position: absolute;
-   top: 600px;
+   position: relative;
+   top: 300px;
 
 }
 

@@ -1,0 +1,38 @@
+.flex-container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;  
+  border: 1px solid black;
+  height: 340px;
+  text-align: center;
+  align-items: center;
+  align-content: space-arou;
+}
+
+
+section {
+ 
+}
+
+
+div {
+  background-color: aquamarine;
+  font-size: 30px;
+  color: red;
+}
+
+
+
+.box {
+  background-color: purple;
+  width: 300px;
+  text-align: center;
+}
+
+.box2 {
+  background-color: aquamarine; 
+  width: 600px;
+  align-self: flex-end;
+}
+

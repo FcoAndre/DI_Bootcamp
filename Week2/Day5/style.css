@@ -1,0 +1,46 @@
+.navbar {
+    background-color:  #222222 !important;
+}
+
+
+
+.barra {
+    background-color: limegreen !important;
+}
+
+
+.jumbotron {
+    height: 400px;
+}
+
+.topico {
+    margin-left: 40px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.topico a {
+    width: 600px; 
+}
+
+.topico2 {
+    margin-top: 80px;
+}
+
+.topico3 {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-item {
+    color: white !important;
+}
+
+.card-body {
+    border: 1px solid white;
+}
