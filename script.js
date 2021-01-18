@@ -1,49 +1,27 @@
-// Remove the Banana from the array.
-
-var fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
-
-console.log(fruits) // Inicial
-
-fruits.shift();
-
-console.log(fruits);
 
 
-// Sort the array in order.
+console.log(5 + "34");
 
+console.log(5 - "4");
 
-fruits.sort();
+console.log(10 % 5);
 
-console.log(fruits);
+console.log(5 % 10);
 
+console.log("Java" + "Script");
 
-// Put “Kiwi” at the end of the array.
+console.log(" " + " ");
 
-fruits.push("Kiwi");
+console.log(" " + 0);
 
-console.log(fruits);
+console.log(true + true);
 
-// Remove “Apples” from the array. Don’t use the same method as in the question 1.
+console.log(true + false);
 
+console.log(false + true);
 
-fruits.splice(0,1)
+console.log(false - true);
 
-console.log(fruits);
+console.log(3 - 4);
 
-// Sort the array in reverse order. 
-// (Not alphabetical, but reverse the current Array i.e. [‘a’, ‘c’, ‘b’] becomes [‘b’, ‘c’, ‘a’]) 
-// You should have at the end: ["Kiwi", "Oranges", "Blueberries"]
-
-
-fruits.reverse();
-
-console.log(fruits);
-
-
-// Access the item “Oranges”. 
-// let moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
-// could not do it
-
-var moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
-
- System.out.println(moreFruits.get(2))
+console.log("Bob" - "bill");
