@@ -46,4 +46,4 @@ console.log(fruits);
 
 var moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 
- System.out.println(moreFruits.get(2))
+console.log(moreFruits[1][1][0]);
