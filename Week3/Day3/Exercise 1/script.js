@@ -37,23 +37,68 @@
 
 
 
-let a = 2 + 2;
+// let a = 2 + 2;
 
-switch (a) {
-  case 4:
-    alert('Right!');
-    break;
+// switch (a) {
+//   case 4:
+//     alert('Right!');
+//     break;
 
-  case 3: // (*) grouped two cases
-  case 5:
-    alert('Wrong!');
-    alert("Why don't you take a math class?");
-    break;
+//   case 3: // (*) grouped two cases
+//   case 5:
+//     alert('Wrong!');
+//     alert("Why don't you take a math class?");
+//     break;
 
-  default:
-    alert('The result is strange. Really.');
-}
+//   default:
+//     alert('The result is strange. Really.');
+// }
 
+
+
+
+// Exercise 1 Introduction on Objects
+// http://learn.di-learning.com/courses/collection/30/course/118/section/293/chapter/112#
+
+
+// 1. Create an object that has properties "username" and "password".
+// Fill those values in with strings.
+
+
+// 2. Create an array which contains the object you have made above
+// and name the array "database".
+
+// 3. Create an array called "newsfeed" 
+// which contains 3 objects with properties "username" and "timeline".
+
+
+// let myObject = {
+//     username: "Donald",
+//     password: "Trump"
+// }
+// console.log(myObject);
+// ​
+// let database = [myObject];
+// ​
+// console.log(database);
+// ​
+// let newsfeed = [];
+// let o1 = {
+//     username: "Hans",
+//     timeline: "Franz"
+// }
+// let o2 = {
+//     username: "Dans",
+//     timeline: "Kranz"
+// }
+// let o3 = {
+//     username: "Lans",
+//     timeline: "Granz"
+// }
+// ​
+// newsfeed.push(o1,o2,o3);
+// ​
+// console.log(newsfeed);
 
 
 
