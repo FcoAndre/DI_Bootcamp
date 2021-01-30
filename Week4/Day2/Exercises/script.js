@@ -41,8 +41,8 @@
   
 // }
 
-// changeEnough([2, 100, 0, 0], 1004.11)
-
+// changeEnough([2, 100, 0, 0], 14.11);
+// changeEnough([0, 0, 20, 5], 0.75) ;
 
 
 
@@ -86,19 +86,11 @@
     // let obj = prompt('What do you want to add to your basket?');
 
     // function checkBasket(obj){
-    //     if(obj == "glasses"){
-    //         if ("glasses" in amazonBasket){
+    //     if(obj in amazonBasket){
+            
     //             alert("This item was already added to your basket")
     //         }
-    //     }  
-    //     else if(obj == "books"){
-    //         if ("books" in amazonBasket){
-    //           alert("This item was already added to your basket")                }
-    //         }    
-    //     else if(obj == "floss"){
-    //         if ("floss" in amazonBasket){
-    //           alert("This item was already added to your basket")                    }   
-    //             }
+       
     //     else{
     //         alert("This item was not added to your basket yet");
     //     }
@@ -109,7 +101,6 @@
 
 
 
-// I was not able to do Exercise 5, 6 and 7
 
   // Exercise 5
 
@@ -134,10 +125,43 @@
 // } 
 
 
-// function myBill () {
-
+// function myBill(){
+//   sum = 0
+//   for (i = 0 ; i < shoppingList.length ; i++) {
+//    preco = (prices[shoppingList[i]])
+//     sum = sum + preco
+//     // sum = prices.shoppingList[i];
+//   }
 // }
-// console.log(shoppingList)
+
+
+// myBill()
+// console.log("The total price is $"+sum)
 
 
 
+
+
+
+
+// Exercise 6
+
+var valores = prompt("how much did you pay? tell us separting everything by comma.")
+
+var valores2 =  valores.split(',');
+
+
+var x =0
+console.log(x)
+function myTip(){
+  for (i=0; i<3 ; i++)
+    if (valores2[i]<50)
+      console.log(valores2[i])
+        x = 2*valores2  // this *2 was just to make that it was working as a number
+       console.log(x)
+
+  // ---- tried many ways to make this value to become a number but it didnt work
+
+
+}
+myTip();

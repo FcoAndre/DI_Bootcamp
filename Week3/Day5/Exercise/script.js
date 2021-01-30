@@ -122,7 +122,7 @@
 
 
 
-// Exercise 4 : Attendance - I was not able to do it
+// Exercise 4 
 
 // let guestList = {
 //   randy: "Germany",
