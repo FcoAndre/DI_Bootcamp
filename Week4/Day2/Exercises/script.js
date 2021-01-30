@@ -31,14 +31,14 @@
 // const changeEnough = function (coins, price)  {
 //     let coinsTotal = [coins[0]*0.25, coins[1]*0.10, coins[2]*0.05, coins[3]*0.01];
 //         coinsTotal= [coinsTotal[0]+coinsTotal[1]+coinsTotal[2]+coinsTotal[3]];
-        
+
 //         if(coinsTotal>=price) {
 //             console.log("True")
 //         }
 //         else{
 //             console.log("False")
 //         }
-  
+
 // }
 
 // changeEnough([2, 100, 0, 0], 14.11);
@@ -57,7 +57,7 @@
 // numerototal =0
 
 // for (let numero  = 0; numero  <= 500; numero ++){
-           
+
 
 //      if (0 == numero % 23){
 //        console.log (numero + " " + "is a multiple"); 
@@ -77,32 +77,32 @@
 
 // Exercise 4
 
-    // let amazonBasket = {
-    //     glasses: 1,
-    //     books: 2,
-    //     floss: 100
-    // }
+// let amazonBasket = {
+//     glasses: 1,
+//     books: 2,
+//     floss: 100
+// }
 
-    // let obj = prompt('What do you want to add to your basket?');
+// let obj = prompt('What do you want to add to your basket?');
 
-    // function checkBasket(obj){
-    //     if(obj in amazonBasket){
-            
-    //             alert("This item was already added to your basket")
-    //         }
-       
-    //     else{
-    //         alert("This item was not added to your basket yet");
-    //     }
-    // }
+// function checkBasket(obj){
+//     if(obj in amazonBasket){
 
-    //     checkBasket(obj);
+//             alert("This item was already added to your basket")
+//         }
 
+//     else{
+//         alert("This item was not added to your basket yet");
+//     }
+// }
 
+//     checkBasket(obj);
 
 
 
-  // Exercise 5
+
+
+// Exercise 5
 
 
 
@@ -146,22 +146,124 @@
 
 // Exercise 6
 
-var valores = prompt("how much did you pay? tell us separting everything by comma.")
+// const valores = prompt("how much did you pay? tell us separting everything by comma.")
 
-var valores2 =  valores.split(',');
+// const valores2 =  valores.split(',');
 
-
-var x =0
-console.log(x)
-function myTip(){
-  for (i=0; i<3 ; i++)
-    if (valores2[i]<50)
-      console.log(valores2[i])
-        x = 2*valores2  // this *2 was just to make that it was working as a number
-       console.log(x)
-
-  // ---- tried many ways to make this value to become a number but it didnt work
+// let totalTips = [];
+// let totalTotal = [];
 
 
-}
-myTip();
+// function myTip(){
+//   for (let i=0; i<3 ; i++){
+//     if (valores2[i]<50){
+//       x = 0.2*valores2[i]; 
+//       totalTips.push(x)
+//     }
+//     if (valores2[i]>50 && valores2[i]<200) {
+//         y = 0.15*valores2[i];
+//         totalTips.push(y)
+//       }
+//     if (valores2[i]>200) {
+//       z = 0.1*valores2[i]
+//       totalTips.push(z)
+//     }
+// }
+// }
+// myTip(); // Gives how much was the tip
+
+// function myTotal(){
+//   for (let i=0; i<3 ; i++){
+//     if (valores2[i]<50){
+//       x = 1.2*valores2[i]; 
+//       totalTotal.push(x)
+//     }
+//     if (valores2[i]>50 && valores2[i]<200) {
+//         y = 1.15*valores2[i];
+//         totalTotal.push(y)
+//       }
+//     if (valores2[i]>200) {
+//       z = 1.1*valores2[i]
+//       totalTotal.push(z)
+//     }
+// }
+// }
+
+// myTotal(); // Gives how much was the total
+
+// console.log(totalTips)
+// console.log(totalTotal)
+
+
+
+
+
+
+
+
+
+
+
+// 7 
+
+// check price hotel
+
+// do {
+//   numdays = prompt("How many nights you gonna stay?");
+// }
+// while (isNaN(numdays))
+
+
+// function hotel_cost() {
+//   x = numdays * 140
+//   return x
+// }
+// hotel_cost();
+
+// // check price flight
+
+// destination = 1
+
+// function plane_ride_cost() {
+//   while (!(isNaN(destination))) {
+//     destination = prompt("What is yout destination?");
+//   }
+//   if (destination == "London") {
+//     var price1 = 183;
+//     return price1;
+//     }
+//   if (destination == "Paris") {
+//     var price2 = 220;
+//     return price2;
+//   }
+//   if (destination !== "Paris"|| destination !== "London"){
+//     var price3 = 300;
+//     return price3;
+//   }
+// }
+
+// plane_ride_cost();
+
+// // check price car
+
+// do {
+//   numcars = prompt("For how many days you need a car?");
+// }
+// while (isNaN(numdays))
+
+
+// function rental_car_cost() {
+//   z = numcars * 40
+//   return z
+// }
+// rental_car_cost();
+
+// // check total
+
+
+// function total_vacation_cost() {
+//   console.log("The hotels costs " + hotel_cost() + " the flight ticket costs " + plane_ride_cost() + " and the car costs " + rental_car_cost())
+// }
+
+// total_vacation_cost();
+
