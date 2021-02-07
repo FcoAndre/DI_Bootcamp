@@ -9,30 +9,30 @@
 
 // ---------------------------------------------------------------------------------
 
-// var button = document.getElementById('button');
+var button = document.getElementById('button');
 
-// console.log(button);
-
-
-// var secondParragraph = document.querySelector('#second');
-
-// console.log(secondParragraph);
+console.log(button);
 
 
+var secondParragraph = document.querySelector('#second');
 
-// var secondParragraph = document.getElementsByClassName('text');
-
-// console.log(secondParragraph);
+console.log(secondParragraph);
 
 
 
+var secondParragraph = document.getElementsByClassName('text');
 
-// var parragraph = document.getElementsByTagName('p');
-
-// console.log(parragraph);
-
+console.log(secondParragraph);
 
 
-// var parragraph = document.querySelectorAll('.text');
 
-// console.log(parragraph);
+
+var parragraph = document.getElementsByTagName('p');
+
+console.log(parragraph);
+
+
+
+var parragraph = document.querySelectorAll('.text');
+
+console.log(parragraph);

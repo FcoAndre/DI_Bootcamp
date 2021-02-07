@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Challenge: Mad Libs</title>
+</head>
+
+<body>
+
+    <h1>Mad Libs</h1>
+
+    <ul>
+        <li>Your Name: <input type="text" id="name"></li><br>
+        <li> One adjective for you: <input type="text" id="adjectiveme"></li><br>
+        <li>Friends name: <input type="text" id="friend"></li><br>
+        <li> One adjective for your friend: <input type="text" id="adjective"></li><br>
+
+    </ul>
+
+    <button id="lib-button">Lib it!</button>
+
+    <p>Generated story:
+        <span id="story"></span>
+    </p>
+
+    <script>
+
+        var namevar = document.getElementById("name");
+        var friendvar = document.getElementById("friend");
+        var adjectivevar = document.getElementById("adjective");
+        var adjectivemevar = document.getElementById("adjectiveme");
+
+        let libButton = document.getElementById('lib-button');
+        let libIt = function () {
+            if (namevar.value.length != 0 && friendvar.value.length != 0 && adjectivevar.value.length != 0 && adjectivemevar.value.length != 0) {
+
+                let storyDiv = document.getElementById("story");
+                storyDiv.innerHTML = namevar.value + ", do you know that you should never let your friends get lonely?! So that is why you should get your phone now and disturbe " + friendvar.value + "! " + adjectivevar.value + " people like them, deserve " + adjectivemevar.value + " people like you!"
+
+            }
+            else {
+                let storyDiv = document.getElementById("story");
+                storyDiv.innerHTML = "Fill all the blanks"
+            }
+        };
+        libButton.addEventListener('click', libIt);
+    </script>
+
+</body>
+
+</html>

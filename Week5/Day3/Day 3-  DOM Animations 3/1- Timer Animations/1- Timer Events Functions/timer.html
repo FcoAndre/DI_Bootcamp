@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 2 -->
+    <!-- <p>Click "Try it". Wait 3 seconds. The page will alert "Hello".</p>
+    <p>Click "Stop" to prevent the first function to execute.</p>
+    <p>(You must click "Stop" before the 3 seconds are up.)</p>
+
+    <button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+
+    <button onclick="clearTimeout(myVar)">Stop it</button> -->
+
+
+
+
+    <!-- 4 -->
+    <!-- <p>A script on this page starts this clock:</p>
+
+    <p id="demo"></p> -->
+
+
+
+    <!-- 5 -->
+    <!-- <p>A script on this page starts this clock:</p>
+
+    <p id="demo"></p>
+
+    <button onclick="clearInterval(myVar)">Stop time</button> -->
+
+
+
+
+    <!-- 6 -->
+    <!-- <div id="countdown"></div> -->
+
+
+
+
+    <script>
+
+        //JavaScript Timing Events
+        //https://www.w3schools.com/js/js_timing.asp
+
+        // 1
+        // SetTimeout():
+
+        // function sayHi(phrase, who) {
+        //     alert(phrase + ', ' + who);
+        // }
+
+        // setTimeout(sayHi, 1000, "Hello", "John"); //  calls sayHi() after one second --> Hello, John
+
+
+
+        //2
+        // function myFunction() {
+        //     alert("Hello");
+        // }
+
+
+        //---------------------------------------------------------------------------------------------
+
+        // //Exercise:
+        // //Create a new HTML file
+        // //Create a banner saying "The sales end in 10min ! " .
+        // //Style the banner and make it visible to the user after 5 sec.
+
+        // // Creating the Banner
+        // let banner = document.createElement('div');
+        // banner.style.width = '500px';
+        // banner.style.height = '200px';
+        // banner.style.border = '5px solid red';
+        // banner.style.backgroundColor = 'blue';
+
+        // // Center the content inside
+        // banner.style.display = 'flex';
+        // banner.style.justifyContent = 'center';
+        // banner.style.alignItems = 'center';
+
+        // // Creating the Text
+        // let text = document.createElement('p');
+        // text.innerHTML = 'The sales end in 10min !';
+        // text.style.color = 'white';
+        // text.style.fontWeight = 'Bold';
+        // text.style.fontSize = '2em';
+
+        // //Append to the Page
+        // banner.appendChild(text);
+        // //document.body.appendChild(banner);
+
+
+        // //Timer Function
+        // function display() {
+        //     document.body.appendChild(banner);
+        // }
+
+        // setTimeout(display, 5000);
+
+
+        //-------------------------------------------------------------------------------------------
+
+
+
+        //3
+        //SetInterval():
+
+        // setInterval(function() {
+
+        //     // Do something every 5 seconds
+        //     console.log('Hi');
+
+        // }, 1000);
+
+
+
+        //4
+        // var myVar = setInterval(myTimer, 1000);
+
+        // function myTimer() {
+        //     var d = new Date();                                                  //https://www.w3schools.com/js/js_dates.asp
+        //     document.getElementById("demo").innerHTML = d.toLocaleTimeString();  //https://www.w3schools.com/jsref/jsref_tolocaletimestring.asp
+        // }
+
+
+
+
+        //5
+        // var myVar = setInterval(myTimer, 1000);
+        // function myTimer() {
+        //     var d = new Date();
+        //     document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+        // }
+
+
+
+
+        //6
+        //Countdown
+
+        // let timeleft = 10;
+        // let downloadTimer = setInterval(function () {
+        //     if (timeleft <= 0) {
+        //         clearInterval(downloadTimer);
+        //         document.getElementById("countdown").innerHTML = "Finished";
+        //     } else {
+        //         document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+        //     }
+        //     timeleft -= 1;
+        //     //timeleft --;
+        // }, 1000);
+
+
+
+        // Check 2- Timer Animation Examples
+
+
+
+        //-----------------------------------------------------------------------------------------------
+
+        //Exercise 2
+        //Use the same code as before but create a countdown in the banner.
+
+        // ... "The sales end in 10sec ! "
+
+        // ... "The sales end in 9sec ! "
+
+        //etc ...until 0
+
+
+
+        //Creating the Banner
+        // let banner = document.createElement('div');
+        // banner.style.width = '500px';
+        // banner.style.height = '200px';
+        // banner.style.border = '5px solid red';
+        // banner.style.backgroundColor = 'blue';
+
+        // // Center the content inside
+        // banner.style.display = 'flex';
+        // banner.style.justifyContent = 'center';
+        // banner.style.alignItems = 'center';
+
+        // // Creating the Text
+        // let text = document.createElement('p');
+        // text.innerHTML = 'The sales end in 10min !';
+        // text.style.color = 'white';
+        // text.style.fontWeight = 'Bold';
+        // text.style.fontSize = '2em';
+
+        // //Set an Id attribute
+        // text.id = 'banner-text';
+
+        // //Append to the Page
+        // banner.appendChild(text);
+        // //document.body.appendChild(banner);
+
+
+        // //Timer Function
+        // function display() {
+        //     document.body.appendChild(banner);
+        // }
+        // setTimeout(display, 5000);
+
+
+        // //Countdown
+        // let timeleft = 10;
+        // let Timer = setInterval(function() {
+        //     if (timeleft < 0) {
+        //         clearInterval(Timer);
+        //         document.getElementById("banner-text").innerHTML = "Finished!";
+        //         //banner.style.display = 'none'; //disappear
+        //     } else {
+        //         document.getElementById("banner-text").innerHTML = 'The sales end in ' + timeleft + ' sec !';
+        //     }
+        //     timeleft -= 1;  //decrease the time by 1 second
+        // }, 1000);
+
+
+
+
+        //------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+     <select id="a">
+        <option value="apple">Apple</option>
+        <option value="pear">Pear</option>
+        <option value="banana">Banana</option>
+    </select>
+
+
+   
+
+
+
+
+
+
+
+
+
+    <!-- Exercise 1-->
+
+    <!-- <table id="sampleTable" border="1">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+        </tr>
+    </table>
+
+    <input type="button" onclick="insert_Row()" value="Insert row"> -->
+
+
+
+
+    <!-- Exercise 2-->
+
+    <!-- <button id="jsstyle">Style</button> -->
+
+
+
+
+
+    <!-- Exercise 2 Forms -->
+    <!-- <select id="select1"> 
+        <option value="apple">Middle School</option>
+        <option value="pear">University</option>
+        <option value="banana">College</option>
+    </select>
+
+    <button>click</button> -->
+
+
+
+    <script>
+
+
+
+        // DOM Events
+
+        //Inline Event Handler:
+
+        // <form>
+        //     <input type="button" name="test" value="Click me" onclick="inform()">
+        // </form>
+
+        // function inform(){
+        //     alert("You clicked me")
+        // }
+
+
+
+
+        // Set A Handler Using A DOM Property:
+
+        // <form>
+        //     <input id="button" type="button" name="test" value="Click me">
+        // </form>
+
+        // document.getElementById('button').onclick = function() {
+        //     alert('Click!');
+        // };
+
+
+
+
+        // "Check ALL Examples"
+
+
+
+
+
+
+
+        // Exercise 1
+        // Write a JavaScript function to add rows to a table. Use the code below as a base
+
+        // function insert_Row(){
+
+        //     let table = document.getElementById('sampleTable');
+
+        //     let newrow = document.createElement('tr');
+
+        //     newrow.innerHTML = '<td>Row cell</td><td>Row cell</td>';
+
+        //     table.appendChild(newrow);
+
+        // }
+
+
+
+
+
+        // Multiple Events On The Same Element:
+
+        //<button id="btn">Click me</button>
+        //<button id="btn1">Hey Hey</button>
+
+        // let x = document.getElementById("btn")
+        // let y = document.getElementById("btn1")
+
+        // y.addEventListener("click", RespondClick);
+        // y.addEventListener("mouseover", RespondMouseOver);
+
+        // x.addEventListener("click", RespondClick); 
+        // x.addEventListener("mouseover", RespondMouseOver); 
+        // x.addEventListener("mouseout", RespondMouseOut); 
+
+        // function RespondClick() { 
+        //     alert("Button Clicked")
+        // } 
+
+        // function RespondMouseOver() { 
+        //     alert("My mouse is over the btn")
+        // } 
+
+        // function RespondMouseOut() { 
+        //     alert("My mouse is out of the btn")
+        // }     
+
+
+
+
+
+
+
+        // Event Object:
+
+        // <button id="btn">Click me</button>
+        // <button id="btn1">Hey Hey</button>
+
+        // let x = document.getElementById("btn")
+        // let y = document.getElementById("btn1")
+
+        // y.addEventListener("mouseover", RespondMouseOver);
+
+        // x.addEventListener("mouseover", RespondMouseOver); 
+
+        // function RespondMouseOver(e) { 
+        //     console.log("e", e) 
+        //     // all the properties of the event object
+        //     console.log("My mouse is over the btn named" + e.target.innerHTML)
+        //     console.log("e.type: ", e.type)
+        //     // e.type: mouseover
+        //     console.log("e.target: ", e.target)
+        //     // e.target:  <button id=​"btn1">​Hey Hey​</button>​
+        // } 
+
+
+
+
+
+
+
+        //Exercise 2:
+
+        //Add a few event listener to the button. 
+        //The event listeners should change the style of the button
+
+
+        // let btn = document.getElementById('jsstyle');
+
+        // btn.addEventListener('click', function () {
+        //     btn.style.backgroundColor = 'green';
+        //     btn.style.fontSize = '4em';
+
+        // })
+
+        // btn.addEventListener('click', pushbtn);
+
+        // function pushbtn() {
+
+        //     alert('hello')
+
+
+        //     btn.innerHTML = 'MAGIC';
+        //     let newdiv = document.createElement('div');
+        //     newdiv.style.backgroundColor = 'blue';
+        //     newdiv.style.backgroundImage = 'url(https://res.cloudinary.com/practicaldev/image/fetch/s--D-aJRe8W--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/d7oeukl09h4vemh75dl0.png)';
+        //     newdiv.style.width = '300px';
+        //     newdiv.style.height = '150px';
+        //     newdiv.style.backgroundSize = 'cover';
+
+        //     document.body.insertBefore(newdiv, btn);
+
+
+        // }
+
+
+        // window.addEventListener('keydown', function (e) {
+        //     if ( e.keyCode == 13) {
+
+
+
+        //     }
+        // });
+
+
+        // document.addEventListener('keypress', hello);
+
+        // function hello(){
+
+        //     let circle = document.createElement('div');
+
+        //     circle.style.backgroundColor = 'red';
+        //     circle.style.borderRadius = '50%';
+        //     circle.innerHTML = 'DANGER ZONE';
+        //     circle.style.color = 'white';
+        //     circle.style.width = '300px';
+        //     circle.style.height = '300px';
+        //     circle.style.textAlign = 'center';
+        //     circle.style.display = 'flex';
+        //     circle.style.justifyContent = 'center';
+        //     circle.style.margin = 'auto';
+        //     circle.style.padding = '10px';
+
+
+        //     document.body.insertBefore(circle, btn);
+
+
+
+        // }
+
+
+
+
+
+        // Event Bubbling :
+
+        //     <style>
+        //     div { border : 2px solid blue}
+        //     button { border : 2px solid red}
+        // </style>
+
+        // <section id="section">
+        //     <div id="div">
+        //         <button id="btn">Click me</button>
+        //     </div>
+        // </section>
+
+        // let x = document.getElementById("btn")
+        //    let y = document.getElementById("div")
+        //    let z = document.getElementById("section")
+
+        //    x.addEventListener("click", XRespondClick); 
+        //    y.addEventListener("click", YRespondClick); 
+        //    z.addEventListener("click", ZRespondClick); 
+
+        //    function XRespondClick(e) { 
+        //        alert("BTN is Clicked")
+        //    }    
+
+        //    function YRespondClick(e) { 
+        //        alert("DIV is Clicked")
+        //    }    
+
+        //     function ZRespondClick(e) { 
+        //        alert("SECTION is Clicked")
+        //    }  
+
+            //Result if I click on the button
+            // Alert : BTN is Clicked
+            // Alert : DIV is Clicked
+            // Alert : SECTION is Clicked
+            // --> The event is triggered from the element that its clicked to the top
+
+
+
+
+
+        // First Captured By The Outermost Element And Propagated To The Inner Elements
+
+        // let x = document.getElementById("btn")
+        //    let y = document.getElementById("div")
+        //    let z = document.getElementById("section")
+
+        //    x.addEventListener("click", XRespondClick, true); 
+        //    y.addEventListener("click", YRespondClick, true); 
+        //    z.addEventListener("click", ZRespondClick, true); 
+
+        //    function XRespondClick(e) { 
+        //        alert("BTN is Clicked")
+        //    }    
+
+        //    function YRespondClick(e) { 
+        //        alert("DIV is Clicked")
+        //    }    
+
+        //     function ZRespondClick(e) { 
+        //        alert("SECTION is Clicked")
+        //    }  
+
+        //     //Result if I click on the button
+        //     // Alert : SECTION is Clicked
+        //     // Alert : DIV is Clicked
+        //     // Alert : BTN is Clicked
+        //     // --> The event is triggered from the top to the element that what clicked 
+
+
+
+
+        // Stop The Bubbling "Event.StopPropagation()" 
+
+        // let x = document.getElementById("btn")
+        //    let y = document.getElementById("div")
+        //    let z = document.getElementById("section")
+
+        //    x.addEventListener("click", XRespondClick); 
+        //    y.addEventListener("click", YRespondClick); 
+        //    z.addEventListener("click", ZRespondClick); 
+
+        //    function XRespondClick(e) { 
+        //        alert("BTN is Clicked")
+        //        e.stopPropagation()     // it is stoped
+        //    }    
+
+        //    function YRespondClick(e) { 
+        //        alert("DIV is Clicked")
+        //    }    
+
+        //     function ZRespondClick(e) { 
+        //        alert("SECTION is Clicked")
+        //    }  
+
+            //Result if I click on the button
+            // Alert : BTN is Clicked
+            // --> The bubbling stopped
+
+
+
+
+
+
+        //     Exercise 3:
+
+        // Add a click event listener to the div
+
+        // Add a few event listeners to the button. With at least one click event. The event listeners should change the style of the button
+
+        // Check how the propagation works and try to prevent it
+
+        // <div>
+        //     <button id="jsstyle">Style</button>
+        // </div>
+
+
+        // Answers:
+
+        // let x = document.getElementById("jsstyle");
+        // console.log(x);
+
+
+        // x.addEventListener("click", XRespondClick);
+
+        // document.querySelector('div').addEventListener("click", ZRespondClick); 
+
+
+        // function XRespondClick(e) {
+        //     alert("BTN is Clicked")
+
+        //     x.style.fontSize = '50px';
+        //     x.style.backgroundColor = 'red';
+
+        //     x.style.color = 'blue';
+
+        //     // Prevent Propagation
+        //     e.stopPropagation()
+        // }
+
+
+
+        // function ZRespondClick(e) {
+        //     alert("DIV is clicked")
+
+        // }
+
+
+
+
+
+
+        // Accessing Form Data:
+
+        // <form name="my">
+        // <input name="one" value="1">
+        // <input name="two" value="2">
+        // </form>
+
+        //get the form
+        //let form = document.forms.my; 
+        //console.log(form);
+
+        // OR
+        //let form = document.forms[0]; // the first form on the page
+        //console.log(form);
+
+        // console.log(form.name) // "my"
+
+        // //  get the number of forms on the page
+        //console.log(document.forms.length);
+
+
+        // get the element
+        //let elem = form.elements.one; // <input name='one' value='1'>
+        // OR
+        //let elem = form.elements[0]; // <input name='one' value='1'>
+        //console.log(elem);
+
+
+
+        // Accessing /Modifying An Element Of A Form (input.value):
+
+        // <form name="my">
+        // <input name="one" value="1">
+        // <input name="two" value="2">
+        // </form>
+
+        // let form = document.forms.my; 
+        // let firstElement = form.elements.one; 
+
+        // console.log(firstElement.value); // 1
+        // firstElement.value = 'hey' 
+        // console.log(firstElement.value); // "hey"
+
+
+
+
+        // Specific Event Handler:
+
+        // Onchange:
+        // <input type="text" onchange="alert(this.value)">
+        // <input type="button" value="Button">
+
+
+        // Oninput:
+        // <input type="text" id="input"> <span id="result"></span>
+
+        // let newInput = document.getElementById('input')
+        // newInput.oninput = function () {
+        //     result.innerHTML = input.value;
+        // };
+
+
+
+
+
+        // Exercise 1:
+
+        // Write a JavaScript function to get the values of First and Last name of the following form
+
+        // <html>
+        //     <body> 
+        //         <form id="form1" onsubmit="getvalue()"> 
+        //         <label>First name: </label><input type="text" name="fname" value="David"><br> 
+        //         <label>Last name: </label><input type="text" name="lname" value="BenGurion"><br> 
+        //         <input type="submit" value="Submit"> 
+        //         </form> 
+        //     </body> 
+        // </html> 
+
+        // Answer:
+
+
+        // function getvalue() {
+
+        //     //alert('Form Submitted');
+
+        //     //// Prevents the default action of a form in the browser which is: refreshing the page
+        //     event.preventDefault();
+
+        //     form = document.getElementById('form1');
+        //     //console.log(form);
+
+        //     //// Getting the first input tag
+        //     //console.log(form.elements.fname);
+        //     //console.log(form.elements[0]);
+
+        //     //// Getting the second input tag
+        //     //console.log(form.elements.lname);
+        //     //console.log(form.elements[1]);
+
+        //     ////Store the 2 inputs in variables to get the values
+        //     firstName = form.elements.fname.value
+        //     lastName = form.elements.lname.value
+
+        //     console.log(firstName);
+        //     console.log(lastName);
+
+        // }
+
+
+
+
+
+        // Select Form
+
+        // <select id="a">
+        // <option value="apple">Apple</option>
+        // <option value="pear">Pear</option>
+        // <option value="banana">Banana</option>
+        // </select>
+
+        //get the select form
+        //let dropdown = document.getElementById('a');
+        //console.log(dropdown);
+
+
+        // all three lines do the same thing
+        //dropdown.options[2].selected = true; //Banana selected
+        //dropdown.value = 'banana'; //Banana selected
+        //dropdown.selectedIndex = 2; //Banana selected
+
+        // To check which option is selected
+        //console.log(dropdown.selectedIndex) // "2"
+        //console.log(dropdown.value) // "Banana"
+
+
+
+
+
+//         Exercise 2:
+
+//         Write a JavaScript function to :
+
+//             Get the value of the 2nd Option
+//         Add a new option with the value 'Work' at the end of the select form
+//         Add a new option with the value 'Primary School' at the beginning of the select form
+//         Change 'College' as selected.Use the 3 properties we learned above
+//         Add a button that alert the choice selected
+
+//                 <select id="select1">
+//                     <option value="apple">Middle School</option>
+//                     <option value="pear">University</option>
+//                     <option value="banana">College</option>
+//                 </select>
+
+
+            // Answers:
+
+            //1
+            // let select = document.getElementById('select1');
+            // //console.log(select);
+            // let value1 = select.options[1].value;
+            // console.log(value1);
+
+            // //2.
+            // let newOption = document.createElement('option');
+            // newOption.value = 'Work';
+            // newOption.text = 'Work';
+            // select.appendChild(newOption);
+
+            // //3
+            // let newOption2 = document.createElement('option');
+            // newOption2.value = 'Primary School';
+            // newOption2.text = 'Primary School';
+
+            // let firstSelect = select[0];
+            // //console.log(firstSelect);
+            // select.insertBefore(newOption2, firstSelect);
+
+            // //4.
+            // select[3].setAttribute("selected", "selected");
+
+            // //5
+            // document.querySelector('button').addEventListener('click', function(){
+                
+            //     //console.log(select.options);
+
+            //     let value = select.options[select.selectedIndex].text;
+            //     alert(value);
+            // })
+
+
+
+
+
+            // Input.Checked Property
+            // <table id="table">
+            // <tr>
+            //     <td>Your age:</td>
+
+            //     <td>
+            //     <label>
+            //         <input type="radio" name="age" value="young" checked> less than 18
+            //     </label>
+            //     <label>
+            //         <input type="radio" name="age" value="mature"> from 18 to 50
+            //     </label>
+            //     <label>
+            //         <input type="radio" name="age" value="senior"> more than 60
+            //     </label>
+            //     </td>
+            // </tr>
+            // </table>
+
+            // let inputs = table.getElementsByTagName('input');
+
+            // for (let input of inputs) {
+            //     alert( input.value + ': ' + input.checked );
+            // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

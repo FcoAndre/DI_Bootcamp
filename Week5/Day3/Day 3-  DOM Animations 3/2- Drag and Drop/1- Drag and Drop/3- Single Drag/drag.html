@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            overflow: hidden;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .box {
+            padding: 20px;
+            display: inline-block;
+        }
+
+        /* .draggable {
+  position:absolute;
+} */
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <span id="box">HELLO</span>
+    </div>
+
+
+    <script>
+
+        //MouseEvent clientX Property
+        //Output the coordinates, in pixels of the mouse pointer when the mouse button is clicked on an element
+        //event.clientX;     // Get the horizontal coordinate
+        //event.clientY;     // Get the vertical coordinate
+        
+
+
+
+        let element = document.getElementById("box")
+        element.setAttribute('draggable', 'true');
+
+        element.addEventListener("dragstart", function (event) {
+            event.target.style.backgroundColor = "lightpink";
+            console.log("drag " + "X: " + event.clientX + " Y: " + event.clientY);
+        });
+
+        element.addEventListener("dragend", function (event) {
+            event.target.style.backgroundColor = "lightgreen";
+            let _x = event.clientX;
+            let _y = event.clientY;
+            console.log(event)
+            event.target.style.left = _x + "px";
+            event.target.style.top = _y + "px";
+            event.target.style.position = "absolute"; //Necessary
+            console.log("dragend" + "X: " + event.clientX + " Y: " + event.clientY);
+        });
+
+    </script>
+
+</body>
+
+</html>

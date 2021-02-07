@@ -1,19 +1,19 @@
 // // Exercise 1 - Change the navbar
 
-// // 1 - change the value od the id 
+// 1 - change the value od the id 
 
-// let newDiv = document.getElementById("navBar");
-// newDiv.setAttribute('id', "socialNetworkNavigation");  
+let newDiv = document.getElementById("navBar");
+newDiv.setAttribute('id', "socialNetworkNavigation");  
 
-// // 2 - add  new li to the ul
-// // a - create a new li
+// 2 - add  new li to the ul
+// a - create a new li
 
-// let newLi = document.createElement('li');
-// let liTextNode = document.createTextNode("Logout")
-// newLi.appendChild(liTextNode);
+let newLi = document.createElement('li');
+let liTextNode = document.createTextNode("Logout")
+newLi.appendChild(liTextNode);
 
-// let theUl = document.getElementsByTagName("ul")[0];
-// theUl.appendChild(newLi);
+let theUl = document.getElementsByTagName("ul")[0];
+theUl.appendChild(newLi);
 
 
 
