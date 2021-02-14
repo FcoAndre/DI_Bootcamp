@@ -104,3 +104,16 @@
 #    print"How come our parents had such a bad taste for names?"
 # else:
 #    print"I am sure that you also wanted to be name Francisco"
+
+
+
+# # Exercise 9 : Tall Enough To Ride A Roller Coaster
+
+# heightInches = float(input("What is your height in inches: \n"))
+
+# heightCm = heightInches * 2.54
+
+# if heightInches < 145:
+#     print("You can't ride it")
+# else:
+#     print("You can ride it")
